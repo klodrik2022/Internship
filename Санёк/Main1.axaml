@@ -1,0 +1,26 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Санёк"
+        x:Class="Санёк.Main1"
+        Title="Таблицы таксопарка" Width="1300" Height="140"
+        Background="Orange">
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="Gray"/>
+        </Style>
+        
+    </Window.Styles>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+        <TextBlock Text="Выберите рабочую таблицу" FontSize="20" Margin="370,20,500,20"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Таблица Машин" Click="Button1_Click" Margin="5"/>
+            <Button Content="Таблица Водителей" Click="Button2_Click" Margin="5"/>
+            <Button Content="Таблица Таксистов" Click="Button3_Click" Margin="5"/>
+            <Button Content="Таблица Оплаты" Click="Button4_Click" Margin="5"/>
+            <Button Content="Таблица Встреч" Click="Button5_Click" Margin="5"/>
+            <Button Content="Таблица Клиентов" Click="Button6_Click" Margin="5"/>
+            <Button Content="Таблица Заказов" Click="Button7_Click" Margin="5"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

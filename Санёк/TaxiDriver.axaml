@@ -1,0 +1,56 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Санёк"
+        x:Class="Санёк.TaxiDriver"
+        Title="Таблица Driver" Width="700" Height="450"
+        Background="Orange">
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="Gray"/>
+        </Style>
+    </Window.Styles>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        
+        <StackPanel Grid.Row="0">
+            
+            <TextBlock Text="Идентификатор" /><!-- Добавление текстового поля -->
+            <TextBox x:Name="txtEmployeeId" />
+            
+            <TextBlock Text="Название:" /><!-- Добавление текстового поля -->
+            <TextBox x:Name="datePickerStartDate" />
+
+            <TextBlock Text="Номер" /><!-- Добавление текстового поля -->
+            <TextBox x:Name="datePickerEndDate" />
+            
+          
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Поиск:" />
+                <TextBox x:Name="txtSearch" />
+                <Button Content="Найти" Click="btnSearch_Click" />
+            </StackPanel>
+            <Button Content="Добавить" Click="btnAdd_Click" /><!-- Добавление кнопки Добавить -->
+            <Button Content="Удалить" Click="btnDelete_Click" /><!-- Добавление кнопки Удалить -->
+            <Button Content="Фильтрация по Александр" Click="btnFilter_Click" /><!-- Добавление кнопки Удалить -->
+            <Button Content="Назад" Click="btnBack_Click" />
+            
+            
+
+
+        </StackPanel>
+
+        <DataGrid x:Name="leaveRequestsGrid" x:CompileBindings="False" Grid.Row="1" Grid.Column="0" AutoGenerateColumns="False"> 
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding TaxiDriverID}" /> <!-- Добавление столбца ID -->
+                <DataGridTextColumn Header="Car" Binding="{Binding CarID}" /><!-- Добавление столбца начала отпуска -->
+                <DataGridTextColumn Header="Driver" Binding="{Binding DriverID }" /><!-- Добавление столбца окончания отпуска -->
+                
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

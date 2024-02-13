@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Санёк/App.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/Bill.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/Car.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/Client.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/Driver.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/Main1.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/MainWindow.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/Order.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/TaxiDriver.axaml" value="Санёк/Санёк.csproj" />
+        <entry key="Санёк/Venue.axaml" value="Санёк/Санёк.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
